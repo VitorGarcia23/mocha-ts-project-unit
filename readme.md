@@ -5,7 +5,7 @@ The objective of this project is to provide a structured code that meets the nee
 
 ## Structure
 
-* **reports** : folder that will contain all the tests results in an html file. The name pattern is api*tests*${date_time}.
+* **reports** : folder that will contain all the tests results in an html file. The name pattern is **tests${date_time}**.
 
 * **tests** : folder that contains all the strucure of the project.
 
@@ -15,8 +15,8 @@ The objective of this project is to provide a structured code that meets the nee
 
 ## Notes
 
-* All test files must be inside a folder(with the route name by convention of the project) and the file must be named **[file-name].tests.js**
-* All the data-set files, by convention, must be inside their respective routes and be named **dataset.js**
+* All test files must be inside a folder(with the route name by convention of the project) and the file must be named **[file-name].tests.ts**
+* All the data-set files, by convention, must be inside their respective routes and be named **dataset.ts**
 * The report files are generated in **HTML format** and are created inside **report folder** on the root of the project.
 
 ## Running Tests
