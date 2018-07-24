@@ -1,0 +1,24 @@
+{
+  "name": "integration-tests",
+  "version": "0.0.1",
+  "description": "project to run unit tests in typescript",
+  "main": "index.ts",
+  "scripts": {
+    "tests": "./node_modules/.bin/mocha --opts test/config/mocha.opts test/suite/*.test.ts"
+  },
+  "author": "Vitor Ferreira Garcia <vitfgarcia@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.5",
+    "@types/expect": "^1.20.3",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "mochawesome": "^2.3.1",
+    "ts-mocha": "^1.2.0",
+    "ts-node": "^7.0.0"
+  }
+}
