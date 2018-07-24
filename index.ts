@@ -1,7 +1,7 @@
 import { spawn } from 'child_process';
 
 let file = '*';
-let folder = 'suite'
+let folder = 'suite';
 
 process.argv.forEach(arg => {
     if (arg.includes('--file=')) {
