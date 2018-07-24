@@ -24,5 +24,8 @@ The objective of this project is to provide a structured code that meets the nee
 Execute the following command or config a new one on **package.json** scripts.
 
 ```
-npm run tests
+yarn run tests
 ```
+- Flags to be passed:
+    - '--file=fileName' where fileName is the name of the test file to run (* is the default value).
+    - '--folder=folderName' where folderName is the name of the folder where the test files are (suite is the default value)
