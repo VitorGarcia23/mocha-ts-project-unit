@@ -5,5 +5,11 @@ describe('Soma function', () => {
     it('deve retornar 4', () => {
         const result = soma(2, 2);
         expect(result).to.be.eq(4, 'O resultado da soma de 2 +2 deve ser 4');
+
+    });
+    
+    it('deve retornar 4', () => {
+        const result = 5;
+        expect(result).to.be.eq(4, 'O resultado da soma de 2 +2 deve ser 4');
     });
 });
