@@ -2,7 +2,7 @@ import { spawn } from 'child_process';
 
 let file = '*';
 let folder = 'suite';
-let test;
+let testName;
 
 process.argv.forEach(arg => {
     if (arg.includes('--file=')) {
@@ -12,15 +12,15 @@ process.argv.forEach(arg => {
         folder = arg.replace('--folder=', '');
     }
     if (arg.includes('--test=')) {
-        test = arg.replace('--test=', '');
+        testName = arg.replace('--test=', '');
     }
 });
 
 const args = ['--opts', 'test/config/mocha.opts', `test/${folder}/${file}.test.ts`];
 
-if (test) {
+if (testName) {
     args.push('-g');
-    args.push(test);
+    args.push(testName);
 }
 
 spawn('mocha', args, { stdio: 'inherit', shell: true });
