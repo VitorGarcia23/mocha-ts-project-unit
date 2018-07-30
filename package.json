@@ -5,14 +5,11 @@
   "main": "index.ts",
   "scripts": {
     "tests": "ts-node index.ts",
-    "coverage": "nyc yarn run tests"
+    "coverage": "nyc yarn run tests && rm -r .nyc_output"
   },
   "nyc": {
     "include": [
       "src/**"
-    ],
-    "exclude": [
-      "src/modules/Model.ts"
     ],
     "extension": [
       ".ts"
@@ -26,7 +23,8 @@
       "json-summary"
     ],
     "sourceMap": true,
-    "instrument": true
+    "instrument": true,
+    "report-dir": "test_results/coverage"
   },
   "author": "Vitor Ferreira Garcia <vitfgarcia@gmail.com>",
   "license": "ISC",
